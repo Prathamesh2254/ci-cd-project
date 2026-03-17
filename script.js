@@ -1,3 +1,3 @@
-function showMessage() {
-    alert("CI/CD is working 🚀");
-}
+window.onload = function() {
+    document.body.style.opacity = "1";
+};
