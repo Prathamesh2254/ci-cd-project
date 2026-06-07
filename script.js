@@ -1,3 +1,3 @@
-window.onload = function() {
-    document.body.style.opacity = "1";
+window.onload = () => {
+document.body.style.opacity = "1";
 };
