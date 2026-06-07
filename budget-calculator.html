@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Budget Calculator</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<section class="calculator-page">
+
+<h1>
+Event Budget Calculator
+</h1>
+
+<div class="calculator">
+
+<select id="eventType">
+
+<option value="1000">
+Birthday
+</option>
+
+<option value="3000">
+Engagement
+</option>
+
+<option value="5000">
+Wedding
+</option>
+
+<option value="4000">
+Corporate
+</option>
+
+</select>
+
+<input
+type="number"
+id="guestCount"
+placeholder="Number of Guests">
+
+<button onclick="calculateBudget()">
+
+Calculate
+
+</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</section>
+
+<script>
+
+function calculateBudget(){
+
+const cost =
+document.getElementById(
+"eventType"
+).value;
+
+const guests =
+document.getElementById(
+"guestCount"
+).value;
+
+const total =
+cost * guests;
+
+document.getElementById(
+"result"
+).innerHTML =
+"Estimated Budget ₹" + total;
+
+}
+
+</script>
+
+</body>
+
+</html>
